@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Niriksha Foundation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="plugin/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="plugin/assets/owl.theme.default.css" />
+  </head>
+  <body>
+    <header class="container-fluid p-0">
+      <nav class="navbar navbar-expand-xl navbar-light bg-light">
+        <a href="" class="navbar-brand col-4 ms-2">
+          <img src="assets/logo.png" alt="error" />
+          <h2 class="px-2">Niriksha Foundation</h2>
+        </a>
+        <button
+          class="navbar-toggler"
+          data-bs-target="#mainNav"
+          data-bs-toggle="collapse"
+          style="margin-right: 7px";
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse menu" id="mainNav">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a href="index.html" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item ">
+              <a href="about.html" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="programs.html" class="nav-link">Programs</a>
+            </li>
+            <li class="nav-item">
+              <a href="get involved.html" class="nav-link">Get Involved</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <button
+            data-bs-target="#donate"
+            data-bs-toggle="modal"
+            class="btn btn-primary ms-5"
+          >
+            Donate Now
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!--Modal Starts Here-->
+    <div class="modal fade" id="donate" data-bs-backdrop="static">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5>Donation Form</h5>
+            <button data-bs-dismiss="modal" class="btn-close"></button>
+          </div>
+          <form name="contact" id="myForm" onsubmit="return donation()">
+            <div class="modal-body">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  name="username"
+                  class="form-control"
+                  placeholder=""
+                />
+                <label for="">Name</label>
+                <p id="nameError"></p>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  placeholder=""
+                />
+                <label for="">Email</label>
+                <p id="emailError"></p>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="number"
+                  name="amount"
+                  class="form-control"
+                  placeholder=""
+                />
+                <label for="">Amount</label>
+                <p id="amountError"></p>
+              </div>
+              <select name="select" class="form-select">
+                <option hidden value="">Select Payment Method</option>
+                <option value="1">Credit Card/Debit Card</option>
+                <option value="2">Net Banking</option>
+                <option value="3">Phonepe/GooglePay</option>
+              </select>
+              <p id="selectError"></p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" type="submit">Donate</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal Ends Here-->
+
+    <section class="container-fluid p-0">
+      <div id="mainSlide" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            data-bs-target="#mainSlide"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button data-bs-target="#mainSlide" data-bs-slide-to="1"></button>
+          <button data-bs-target="#mainSlide" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="banner1 text-center">
+              <div class="animate__animated animate__zoomIn animate__delay-1s">
+                <h1>The Key to Unlocking a Brighter Future</h1>
+                <p>
+                  Empowering children and communities through knowledge, one
+                  step at a time.
+                </p>
+                <button
+                  data-bs-target="#donate"
+                  data-bs-toggle="modal"
+                  class="btn btn-primary mx-3"
+                >
+                  Donate Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="banner2 text-center">
+              <div class="animate__animated animate__zoomIn animate__delay-1s">
+                <h1>Building Stronger Communities, Together</h1>
+                <p>
+                  Empowering individuals, fostering unity, and creating lasting
+                  change for a better tomorrow.
+                </p>
+                <button
+                  data-bs-target="#donate"
+                  data-bs-toggle="modal"
+                  class="btn btn-primary mx-3"
+                >
+                  Donate Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="banner3 text-center">
+              <div class="animate__animated animate__zoomIn animate__delay-1s">
+                <h1>Healthcare for All, Hope for Everyone</h1>
+                <p>
+                  Transforming lives with accessible, affordable, and
+                  compassionate healthcare solutions.
+                </p>
+                <button
+                  data-bs-target="#donate"
+                  data-bs-toggle="modal"
+                  class="btn btn-primary mx-3"
+                >
+                  Donate Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          data-bs-target="#mainSlide"
+          data-bs-slide="prev"
+          class="carousel-control-prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          data-bs-target="#mainSlide"
+          data-bs-slide="next"
+          class="carousel-control-next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="container p-4 about">
+      <div class="row">
+        <div class="col-md-6" data-aos="fade-right">
+          <img src="assets/ngo.png" class="w-100 h-100" alt="error" />
+        </div>
+
+        <div class="col-md-6 pt-4 px-3" data-aos="fade-left">
+          <h2>Who We Are</h2>
+
+          <p>
+            “Niriksha is a nonprofit organization dedicated to empowering
+            marginalized communities. Through our work in education, healthcare,
+            livelihood, and social inclusion, we aim to break the cycle of
+            poverty and create lasting change. Our vision is a world where
+            everyone has the opportunity to thrive, regardless of their
+            background or circumstance.”
+          </p>
+          <a href="about.html" class="btn btn-primary text-uppercase fw-bold"
+            >Learn More</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light">
+      <div class="container p-4 program">
+        <h2 class="text-center">What We Do</h2>
+        <div class="row text-center">
+          <div class="col-md-6 col-lg-3 mb-3" data-aos="fade-down">
+            <div class="card program-card h-100">
+              <a href="programs.html">
+                <div class="zoom-wrapper">
+                  <img
+                    src="assets/education.jpg"
+                    class="w-100 h-100"
+                    alt="error"
+                  /></div
+              ></a>
+              <div class="card-body">
+                <h5 class="card-title">Education</h5>
+                <p class="card-text">
+                  Empowering children through quality education and
+                  skill-building.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-3" data-aos="fade-up">
+            <div class="card program-card h-100">
+              <a href="programs.html">
+                <div class="zoom-wrapper">
+                  <img
+                    src="assets/heallthcare.webp"
+                    class="w-100 h-100"
+                    alt="error"
+                  /></div
+              ></a>
+              <div class="card-body">
+                <h5 class="card-title">Healthcare</h5>
+                <p class="card-text">
+                  Providing access to essential health services for vulnerable
+                  groups.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-3" data-aos="fade-down">
+            <div class="card program-card h-100">
+              <a href="programs.html">
+                <div class="zoom-wrapper">
+                  <img
+                    src="assets/women.jpeg"
+                    class="w-100 h-100"
+                    alt="error"
+                  />
+                </div>
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Women Empowerment</h5>
+                <p class="card-text">
+                  Equipping women with skills and resources to thrive.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-3" data-aos="fade-up">
+            <div class="card program-card h-100">
+              <a href="programs.html">
+                <div class="zoom-wrapper">
+                  <img
+                    src="assets/community.jpg"
+                    class="w-100 h-100"
+                    alt="error"
+                  />
+                </div>
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Community Development</h5>
+                <p class="card-text">
+                  Fostering growth and sustainability in underprivileged areas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="impact-stats text-center">
+      <div class="container p-4">
+        <h2>Our Impact</h2>
+        <div class="row">
+          <div class="col-md-6 col-lg-3 stat-item pb-3">
+            <i class="bi bi-book-half"></i>
+            <h3><span id="count">250</span>+</h3>
+            <span>Children Educated</span>
+          </div>
+          <div class="col-md-6 col-lg-3 stat-item pb-3">
+            <i class="bi bi-people-fill"></i>
+            <h3><span id="counts">120</span>+</h3>
+            <span>Families Supported</span>
+          </div>
+          <div class="col-md-6 col-lg-3 stat-item pb-3">
+            <i class="bi bi-bell"></i>
+            <h3><span id="program">100</span>+</h3>
+            <span>Community Programs</span>
+          </div>
+          <div class="col-md-6 col-lg-3 stat-item pb-3">
+            <i class="bi bi-hospital"></i>
+            <h3><span id="health">200</span>+</h3>
+            <span>Health Care Camps</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="countMe/countMe.min.js"></script>
+    <script>
+      $("#count").countMe(0, 250);
+      $("#counts").countMe(0, 120);
+      $("#program").countMe(0, 100);
+      $("#health").countMe(0, 200);
+    </script>
+    <section class="cta-banner container px-5">
+      <div class="row mt-5">
+        <div class="col-lg-6" data-aos="fade-down-right">
+          <img src="assets/presenting-your-text.jpg" class="mb-2" alt="error" />
+        </div>
+        <div class="col-lg-6 cta-banner-content" data-aos="fade-down-left">
+          <h1 class="text-uppercase mx-5">how to help us</h1>
+          <div class="d-flex mx-5 mb-3">
+            <div class="one">
+              <img src="assets/donate.webp" alt="error" />
+            </div>
+            <div>
+              <h3>Send Donation</h3>
+              <p>
+                Support our mission to create positive change through education,
+                healthcare, and community empowerment. Every donation makes a
+                difference!
+              </p>
+            </div>
+          </div>
+          <div class="d-flex mx-5 mb-3">
+            <div class="two">
+              <img src="assets/vol.jpg" alt="error" />
+            </div>
+            <div>
+              <h3>Become Volunteer</h3>
+              <p>
+                Join us as a volunteer and help make a meaningful impact in
+                communities. Your time and skills can change lives
+              </p>
+            </div>
+          </div>
+          <div class="d-flex mx-5">
+            <div class="three">
+              <img src="assets/share.png" alt="error" />
+            </div>
+            <div>
+              <h3>Share Media</h3>
+              <p>
+                Share impactful media showcasing our work, events, and success
+                stories. Help raise awareness and inspire others to join!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container p-5 volunteer-elementor">
+      <h1>Become a volunteer</h1>
+      <h3>Join us for a better life and beautiful future</h3>
+      <p>
+        Becoming a volunteer means making a real difference in a child’s life.
+        Your time, care, and support can help shape their future and create
+        lasting change. Join us and be part of something meaningful together, we
+        can build brighter tomorrows.
+      </p>
+      <button class="btn btn-primary">
+        <a href="get involved.html" class="nav-link">
+        Get Involved
+      
+    </a></button>
+    </section>
+    <section class="container px-5 text-center testimonial">
+      <h2>what people say</h2>
+      <h6>Hear from our partners and supporters about their experience with us!</h6>
+      <div class=" owl-carousel  ">
+        <div class=" item text-center" >
+          <img src="assets/person-1.jpg "  alt="error" />
+          <h3>Meenakshi</h3>
+          <h5>Volunteer</h5>
+          <div class="rating">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </div>
+          <p>
+            "The work this NGO does is incredible, and I am honored to
+            contribute. It's fulfilling to see the positive impact firsthand."
+          </p>
+        </div>
+        <div
+          class=" text-center item"
+          
+        >
+          <img src="assets/person-2.jpg "  alt="error" />
+          <h3>Priya</h3>
+          <h5>Volunteer</h5>
+          <div class="rating">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </div>
+          <p>
+            "From day one, I felt like part of a family. The experience has
+            taught me so much about giving back and staying humble."
+          </p>
+        </div>
+        <div
+          class=" text-center item"
+          
+        >
+          <img src="assets/person-3.jpg "  alt="error" />
+          <h3>Ramesh</h3>
+          <h5>Volunteer</h5>
+          <div class="rating">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </div>
+          <p>
+            "Volunteering here has been a life-changing experience. I love being
+            part of a community that truly cares about making a difference."
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="plugin/owl.carousel.min.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        items:3,
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots:true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+              items: 1,
+            },
+            576: {
+              items: 1,
+            },
+            992: {
+              items: 2,
+            },
+            1200: {
+              items: 2,
+            },
+        },
+      });
+    </script>
+
+    <section class="bg-light text-center mb-3 py-3 help">
+      <h2 class="fw-bold">Helping individuals reach their goals and pursue their dreams</h2>
+      <h1>The perfect help</h1>
+      <button class="btn btn-primary fw-bold text-uppercase">
+        <a href="contact.html" class="nav-link">Contact Us</a>
+      </button>
+    </section>
+
+    <footer class="text-center pt-4">
+      <div class="container px-4">
+        <div class="row footer1">
+          <div class="col-lg-3 col-md-6 mb-3">
+            <h2 class="pb-2">Contact Us</h2>
+            <p><i class="bi bi-geo-alt"></i> 1234 Hope Lane, City, Country</p>
+
+            <p><i class="bi bi-envelope"></i> info@niriksha.org</p>
+
+            <span><i class="bi bi-telephone"></i> +123-456-7890</span>
+          </div>
+          <div class="col-lg-3 col-md-6 link">
+            <h2 class="pb-2">Links</h2>
+
+            <ul>
+              <li><a href="index.html" class="nav-link">Home</a></li>
+              <li><a href="about.html" class="nav-link">About Us</a></li>
+              <li><a href="programs.html" class="nav-link">Programs</a></li>
+              <li>
+                <a href="get involved.html" class="nav-link">Get Involved</a>
+              </li>
+              <li><a href="contact.html" class="nav-link">Contact</a></li>
+              <li>Donate Now</li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 work">
+            <h2 class="pb-2">Our Work</h2>
+            <ul>
+              <li><a href="programs.html" class="nav-link">Education</a></li>
+              <li><a href="programs.html" class="nav-link">Health Care</a></li>
+              <li>
+                <a href="programs.html" class="nav-link">Women Empowerment</a>
+              </li>
+              <li>
+                <a href="programs.html" class="nav-link"
+                  >Community Development</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h2 class="pb-2">Stay Connected</h2>
+            <p>Sign up to get the latest updates.</p>
+            <form class="mail mb-2">
+              <input
+                type="email"
+                placeholder="Enter Your E-Mail"
+                class="btn btn-light"
+              />
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+          </div>
+          <div class="one pb-3"></div>
+        </div>
+      </div>
+    </footer>
+
+    <footer class="text-center pt-2">
+      <div class="container px-4">
+        <div class="row footer2">
+          <div class="col-lg-4 mb-2">
+            <p>&copy; 2024 Niriksha Foundation. All rights reserved.</p>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+          </div>
+          <div class="col-lg-4">
+            <ul class="social">
+              <li class="px-2"><i class="bi bi-facebook"></i></li>
+              <li class="px-2"><i class="bi bi-twitter"></i></li>
+              <li class="px-2"><i class="bi bi-instagram"></i></li>
+              <li class="px-2"><i class="bi bi-pinterest"></i></li>
+              <li class="px-2"><i class="bi bi-youtube"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="validation.js"></script>
+  </body>
+</html>

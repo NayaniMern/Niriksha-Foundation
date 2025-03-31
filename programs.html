@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Niriksha Foundation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="container-fluid p-0">
+      <nav class="navbar navbar-expand-xl navbar-light bg-light">
+        <a href="" class="navbar-brand col-4 ms-2">
+          <img src="assets/logo.png" alt="error" />
+          <h2 class="px-2">Niriksha Foundation</h2>
+        </a>
+        <button
+          class="navbar-toggler"
+          data-bs-target="#mainNav"
+          data-bs-toggle="collapse"
+          style="margin-right: 7px"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse menu" id="mainNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link ">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link ">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="programs.html" class="nav-link active">Programs</a>
+            </li>
+            <li class="nav-item">
+              <a href="get involved.html" class="nav-link">Get Involved</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <button
+            data-bs-target="#donate"
+            data-bs-toggle="modal"
+            class="btn btn-primary ms-5"
+          >
+            Donate Now
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!--Modal Starts Here-->
+    <div class="modal fade" id="donate" data-bs-backdrop="static">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5>Donation Form</h5>
+            <button data-bs-dismiss="modal" class="btn-close"></button>
+          </div>
+          <form name="contact"  id="myForm"  onsubmit="return donation()">
+            <div class="modal-body">
+              <div class="form-floating mb-3">
+                <input type="text" name="username" class="form-control" placeholder="" />
+                <label for="">Name</label>
+                <p id="nameError"></p>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" name="email" class="form-control" placeholder="" />
+                <label for="">Email</label>
+                <p id="emailError"></p>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" name="amount" class="form-control" placeholder="" />
+                <label for="">Amount</label>
+                <p id="amountError"></p>
+              </div>
+              <select name="select" class="form-select "  >
+                <option hidden value="">Select Payment Method</option>
+                <option value="1">Credit Card/Debit Card</option>
+                <option value="2">Net Banking</option>
+                <option value="3">Phonepe/GooglePay</option>
+                
+              </select>
+              <p id="selectError"></p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" type="submit">Donate</button>
+            </div>
+          </form>
+          <script src="validation.js"></script>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal Ends Here-->
+
+    <section class="background">
+      <div class="col-lg-12">
+        <h2>Programs</h2>
+      </div>
+    </section>
+    <section class="programs">
+      <div class="container p-5 education">
+        <div class="row">
+          <div class="col-md-6 col-lg-6" data-aos="fade-down-right">
+            <h1>Education Programs</h1>
+            <h3>"Shiksha Jyoti" (Lighting the Path to Education)</h3>
+            <p>
+              Education is at the heart of our mission to break the cycle of
+              poverty. Niriksha is committed to providing access to quality
+              education for children and youth from underserved communities.
+              Through our education programs, we focus on bridging the gap
+              between inequality and opportunity.
+            </p>
+            <h4>Key Initiatives:</h4>
+            <ul>
+              <li>
+                Community Learning Centers:
+                <span
+                  >We run after-school centers that provide supplementary
+                  education, homework assistance, and access to learning
+                  materials for children in rural and underprivileged
+                  areas.</span
+                >
+              </li>
+              <li>
+                Scholarship Programs:
+                <span
+                  >We provide scholarships to deserving students who would
+                  otherwise be unable to afford education, ensuring they can
+                  continue their studies without financial barriers.</span
+                >
+              </li>
+              <li>
+                Teacher Training:
+                <span
+                  >We train local teachers to improve the quality of education
+                  in their communities by equipping them with modern teaching
+                  techniques and tools.</span
+                >
+              </li>
+              <li>
+                Digital Literacy:
+                <span
+                  >In today’s world, digital literacy is essential. Our programs
+                  help students and adults learn to use computers, the internet,
+                  and other digital tools to gain access to information and
+                  opportunities.</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="col-md-6 col-lg-6 justify-content-center"
+            data-aos="fade-down-left"
+          >
+            <img src="assets/education1.webp" class="w-100" alt="error" />
+          </div>
+        </div>
+      </div>
+      <div class="container p-5 healthcare">
+        <div class="row">
+          <div class="col-md-6 col-lg-6" data-aos="fade-down-right">
+            <img src="assets/heallthcare1.webp" class="w-100 mb-3" alt="error" />
+          </div>
+          <div class="col-md-6 col-lg-6" data-aos="fade-down-left">
+            <h1>Healthcare Programs</h1>
+            <h3>"Swasthya Disha" (Path to Health and Wellness)</h3>
+            <p>
+              Access to quality healthcare is a fundamental right that many
+              communities are deprived of. Niriksha’s healthcare programs focus
+              on preventive care, awareness, and basic medical support to
+              improve health outcomes for underserved populations
+            </p>
+            <h4>Key Initiatives:</h4>
+            <ul>
+              <li>
+                Mobile Health Camps:
+                <span
+                  >We conduct free health camps in remote and underserved areas,
+                  offering medical consultations, health screenings, and
+                  essential medications to those who otherwise lack access to
+                  healthcare services.</span
+                >
+              </li>
+              <li>
+                Awareness Campaigns:
+                <span
+                  >We run health education campaigns focusing on topics like
+                  hygiene, nutrition, maternal health, and disease prevention to
+                  equip communities with the knowledge they need to stay
+                  healthy.</span
+                >
+              </li>
+              <li>
+                Mental Health Support:
+                <span
+                  >Mental health is often overlooked, especially in marginalized
+                  communities. Our programs provide counseling services and
+                  workshops to raise awareness and provide support for mental
+                  well-being</span
+                >
+              </li>
+              <li>
+                COVID-19 Relief Programs:
+                <span
+                  >During the pandemic, we provided essential medical supplies,
+                  health education, and COVID-19 testing services to vulnerable
+                  populations.</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container p-5 skill">
+        <div class="row">
+          <div class="col-md-6 col-lg-6" data-aos="fade-down-right">
+            <h1>Skill Development & Livelihood Programs</h1>
+            <h3>"Udyog Jyoti" (Light of Livelihood)</h3>
+            <p>
+              Building sustainable livelihoods is essential for individuals to
+              become self-reliant. Niriksha provides skill development programs
+              designed to empower women, youth, and marginalized groups with
+              practical skills that open doors to better employment
+              opportunities.
+            </p>
+            <h4>Key Initiatives:</h4>
+            <ul>
+              <li>
+                Entrepreneurship Programs
+                <span>
+                  Through workshops and mentorship, we help individuals start
+                  their own businesses by providing guidance on business
+                  planning, financial management, and marketing
+                  strategies.</span
+                >
+              </li>
+              <li>
+                Women Empowerment:
+                <span
+                  >We focus on providing economic independence to women by
+                  offering training in skills such as embroidery, crafts, and
+                  small-scale agriculture, along with financial literacy
+                  education to help them manage and grow their income.</span
+                >
+              </li>
+
+              <li>
+                Vocational Training Centers:
+                <span
+                  >We focus on providing economic independence to women by
+                  offering training in skills such as embroidery, crafts, and
+                  small-scale agriculture, along with financial literacy
+                  education to help them manage and grow their income.</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-6" data-aos="fade-down-left">
+            <img src="assets/skill.jpeg" class="w-100 " alt="error" />
+          </div>
+        </div>
+      </div>
+      <div class="container p-5 welfare">
+        <div class="row">
+          <div class="col-md-6 col-lg-6" data-aos="fade-down-right">
+            <img src="assets/women1.jpg" class="w-100  mb-3" alt="error" />
+          </div>
+          <div class="col-md-6 col-lg-6" data-aos="fade-down-left">
+            <h1>Women & Child Welfare Programs</h1>
+            <h3>"Sakhi Shakti" (Empowering Women and Children)</h3>
+            <p>
+              At Niriksha, we prioritize the well-being and protection of women
+              and children, who are often the most vulnerable members of
+              society. Our programs aim to empower women, reduce gender
+              inequality, and improve the lives of children in marginalized
+              communities.
+            </p>
+            <h4>Key Initiatives:</h4>
+            <ul>
+              <li>
+                Women’s Health and Safety:
+                <span
+                  >We provide health services, legal awareness, and self-defense
+                  training to help women protect their rights and improve their
+                  quality of life.</span
+                >
+              </li>
+              <li>
+                Child Protection and Education:
+                <span
+                  >Our programs focus on ensuring that children have access to
+                  education, healthcare, and a safe environment. We run child
+                  protection awareness campaigns and create safe spaces where
+                  children can learn and grow.</span
+                >
+              </li>
+              <li>
+                Nutrition and Care for Mothers and Children:
+                <span
+                  >We provide nutritional support, especially for pregnant women
+                  and infants, to ensure that they receive adequate food and
+                  healthcare to thrive.</span
+                >
+              </li>
+              <li>
+                Advocacy for Women’s Rights:
+                <span
+                  >We engage in advocacy efforts to raise awareness about
+                  women’s rights and promote policies that ensure gender
+                  equality and protection for women and children.</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="text-center pt-4">
+      <div class="container px-4">
+        <div class="row footer1">
+          <div class="col-lg-3 col-md-6 mb-3">
+            <h2 class="pb-2">Contact Us</h2>
+            <p><i class="bi bi-geo-alt"></i> 1234 Hope Lane, City, Country</p>
+
+            <p><i class="bi bi-envelope"></i> info@niriksha.org</p>
+
+            <span><i class="bi bi-telephone"></i> +123-456-7890</span>
+          </div>
+          <div class="col-lg-3 col-md-6 link">
+            <h2 class="pb-2">Links</h2>
+
+            <ul>
+              <li><a href="index.html" class="nav-link">Home</a></li>
+              <li><a href="about.html" class="nav-link">About Us</a></li>
+              <li><a href="programs.html" class="nav-link">Programs</a></li>
+              <li>
+                <a href="get involved.html" class="nav-link">Get Involved</a>
+              </li>
+              <li><a href="contact.html" class="nav-link">Contact</a></li>
+              <li>Donate Now</li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 work">
+            <h2 class="pb-2">Our Work</h2>
+            <ul>
+              <li><a href="programs.html" class="nav-link">Education</a></li>
+              <li><a href="programs.html" class="nav-link">Health Care</a></li>
+              <li>
+                <a href="programs.html" class="nav-link">Women Empowerment</a>
+              </li>
+              <li>
+                <a href="programs.html" class="nav-link"
+                  >Community Development</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h2 class="pb-2">Stay Connected</h2>
+            <p>Sign up to get the latest updates.</p>
+            <form class="mail mb-2">
+              <input
+                type="email"
+                placeholder="Enter Your E-Mail"
+                class="btn btn-light"
+              />
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+          </div>
+          <div class="one pb-3"></div>
+        </div>
+      </div>
+    </footer>
+
+    <footer class="text-center pt-2">
+      <div class="container px-4">
+        <div class="row footer2">
+          <div class="col-lg-4 mb-2">
+            <p>&copy; 2024 Niriksha Foundation. All rights reserved.</p>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+          </div>
+          <div class="col-lg-4">
+            <ul class="social">
+              <li class="px-2"><i class="bi bi-facebook"></i></li>
+              <li class="px-2"><i class="bi bi-twitter"></i></li>
+              <li class="px-2"><i class="bi bi-instagram"></i></li>
+              <li class="px-2"><i class="bi bi-pinterest"></i></li>
+              <li class="px-2"><i class="bi bi-youtube"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

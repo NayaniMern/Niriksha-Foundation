@@ -1,0 +1,824 @@
+* {
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+header .navbar-brand {
+  display: flex;
+}
+header h2 {
+  padding-top: 25px;
+  color: #ec3c07;
+  font-size: 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+ 
+}
+header img {
+  padding-left: 8px;
+  width: 100px;
+animation-name:heartBeat;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  box-shadow: 1px 1px 5px 2px gray;
+  overflow: hidden;
+}
+@media (max-width:400px) {
+  header img{
+    width: 70px;
+  }
+ header h2{
+    font-size: 20px!important;
+    padding-top: 20px;
+  }
+ 
+  
+}
+
+
+.banner1 {
+  width: 100%;
+  height: 75vh;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)),url(assets/students.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.banner2{
+  width: 100%;
+  height: 75vh;
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)),url(assets/community1.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.banner3{
+  width: 100%;
+  height: 75vh;
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url(assets/heallthcare2.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner1 h1,.banner2 h1,.banner3 h1{
+color: #fff;
+font-size: 45px;
+font-weight: 600;
+text-transform: uppercase;
+text-shadow: 5px 5px 10px #003366!important;
+
+
+}
+.banner1 p,.banner2 p,.banner3 p{
+  color: #fff;
+  font-size: 23px;
+  margin-top: 20px;
+  text-transform: capitalize;
+  text-shadow: 4px 2px 10px yellowgreen!important;
+}
+.banner1 button,.banner2 button,.banner3 button{
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 20px;
+}
+
+.menu li a {
+  color: #4d4d4d;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  
+  margin:10px 10px;
+ 
+}
+.menu button{
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.menu li a:hover,.menu li a.active{
+  color: #008000!important;
+  transition: 0.3s ease;
+
+ 
+}
+
+.modal-body,
+.modal-header,
+.modal-footer {
+  background-image: url(assets/donation\ background.jpg);
+}
+.modal-header h5 {
+  color: #008000;
+
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+.about{
+  overflow: hidden;
+}
+.about h2 {
+  color: #003366;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+}
+
+.about p {
+  color: black;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: justify;
+}
+.program {
+  margin-top: 35px;
+}
+.program h2 {
+  padding-bottom: 20px;
+
+  text-transform: uppercase;
+  color: #003366;
+  font-size: 30px;
+  font-weight: 600;
+}
+.program-card {
+  box-shadow: 1px 1px 5px 2px gray;
+}
+.program-card img {
+  height: 150px;
+  object-fit: cover;
+
+}
+.zoom-wrapper:hover img {
+  transform: scale(1.1);
+}
+.zoom-wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.zoom-wrapper img {
+  transition: transform 0.8s;
+}
+.program-card h5 {
+  color: #c0392b;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.program-card p {
+
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #000;
+
+}
+.impact-stats {
+  background-color: #f8f9fa;
+  padding: 32px 0;
+}
+.impact-stats h2 {
+  padding-bottom: 20px;
+
+  text-transform: uppercase;
+  color: #003366;
+  font-size: 30px;
+  font-weight: 600;
+}
+.stat-item {
+  text-align: center;
+}
+.stat-item i {
+  font-size: 50px;
+  animation-name:flash;
+  animation-duration: 7s;
+  animation-iteration-count: infinite ;
+  
+}
+.stat-item h3,.stat-item h3 span {
+  color: #c0392b;
+  font-size: 25px;
+  font-weight: 600;
+  
+}
+.stat-item span {
+  color: #4d4d4d;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.cta-banner{
+  overflow: hidden;
+}
+.cta-banner h1{
+  padding-bottom: 20px;
+
+  text-transform: uppercase;
+  color: #003366;
+  font-size: 30px;
+  font-weight: 600;
+}
+.cta-banner img{
+  width: 100%;
+  height: 80%;
+}
+.cta-banner-content h3{
+  color: #c0392b;
+  font-size: 25px;
+  font-weight: 600;
+}
+.cta-banner-content p{
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #000;
+}
+.cta-banner-content .one img {
+  width: 45px;
+  height: 45px;
+  margin-right: 20px;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 2px 2px;
+  background-color: antiquewhite;
+}
+.cta-banner-content .two img ,.cta-banner-content .three img{
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px 5px;
+  background-color: antiquewhite;
+}
+.volunteer-elementor{
+  background-image: url(assets/background.jpg);
+  width: 100%;
+  height: auto;
+
+  border-radius: 30px;
+  background-position: center;
+  opacity: 0.9;
+}
+
+.volunteer-elementor h1{
+  padding-bottom: 20px;
+
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  text-shadow: 2px 3px 5px #000;
+}
+.volunteer-elementor h3{
+  padding-bottom: 20px;
+
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 2px 3px 5px #000;
+  font-size: 30px;
+  font-weight: 600;
+
+  
+ 
+}
+.volunteer-elementor p{
+  padding-bottom: 20px;
+
+  text-transform: capitalize;
+  color: white;
+  text-shadow: 2px 3px 5px #000;
+  font-size:18px;
+  line-height: 30px;
+  text-align: justify;
+  font-weight: 600;
+ 
+}
+.volunteer-elementor button{
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 600;
+
+}
+.testimonial {
+  padding: 32px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  margin-top: 20px;
+ position: sticky;
+}
+.owl-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #827d7d!important;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.owl-dot.active {
+  background-color: #333 !important;
+}
+
+.item {
+  border: 1px solid #f1f1f1;
+  box-shadow: 1px 1px 5px 2px rgb(243, 175, 175);
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;    
+  text-align: center;
+  
+}
+.testimonial h6{
+  padding-bottom: 20px;
+
+  text-transform: capitalize;
+  color: #c0392b;
+  font-size: 20px;
+  font-weight: 600;
+}
+.testimonial h2 {
+  padding-bottom: 20px;
+
+  text-transform: uppercase;
+  color: #003366;
+  font-size: 30px;
+  font-weight: 600;
+}
+.item img {
+
+width: 150px!important;
+height: 130px;
+border-radius: 100px;
+}
+.item i {
+  color: #ffc107;
+}
+.item h3 {
+  color: #c0392b;
+  font-size: 25px;
+  font-weight: 600;
+}
+.item h5 {
+  color: #0077cc;
+  font-size: 16px;
+  font-weight: 600;
+}
+.item p {
+  color: black;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 30px;
+}
+.help h2 {
+  color: #0077cc;
+  font-size: 30px;
+  font-weight: 500;
+
+  padding-bottom: 10px;
+  text-transform: capitalize;
+}
+.help h1 {
+  padding-bottom: 20px;
+
+  text-transform: capitalize;
+  color: #003366;
+  font-size: 30px;
+  font-weight: 600;
+}
+/*footer*/
+footer {
+  background-color: #003366;
+  color: white;
+  padding: 3px 1px;
+}
+.link ul,
+.work ul {
+  padding: 0%;
+}
+.link ul li,
+.work ul li {
+  padding-bottom: 10px;
+}
+.link ul li:hover,
+.work ul li:hover {
+  color: #e1772c;
+}
+footer a {
+  color: #ffc107;
+}
+footer ul li {
+  display: block;
+}
+.social li {
+  display: inline-block;
+}
+.one {
+  border-bottom: 1px solid gray;
+}
+.footer1 h2{
+  color: #abb8c3;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/*About.css*/
+.foundation{
+  overflow: hidden;
+}
+.foundation p {
+  color: black;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: justify;
+}
+.foundation-mission,.foundation-vision{
+  margin-bottom: 10px;
+  
+}
+.foundation-mission i,
+.foundation-vision i {
+  font-size: 50px;
+  padding-top: 0px;
+  animation-name:flash;
+  animation-duration: 7s;
+  animation-iteration-count: infinite ;
+}
+.foundation-mission h2,
+.foundation-vision h2 {
+  color: #c0392b;
+  font-size: 25px;
+  font-weight: 600;
+}
+.foundation-mission p,
+.foundation-vision p {
+  color: black;
+  font-size: 17px;
+  text-transform: capitalize;
+  line-height: 30px;
+  font-weight: 500;
+  padding: 20px;
+}
+.achivements h1{
+  color: #191970;
+  font-size: 35px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.achivements .card{
+  padding: 10px;
+}
+.achivements .card p{
+  font-size: 17px;
+  color: #000;
+  text-align: justify;
+  text-transform: capitalize;
+}
+.achivements .card i{
+  color: #c0392b;
+  font-size: 20px!important;
+  font-weight: 900!important;
+}
+.team h2 {
+  color: #191970;
+  font-size: 35px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.team img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+.team h3 {
+  color: #c0392b;
+  font-size: 25px;
+  font-weight: 600;
+}
+.team h5 {
+  color: #0077cc;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+/*Programs.css*/
+.background {
+background-image: url(assets/bg.jpg);
+background-position: center;
+background-repeat: no-repeat;
+
+  width: 100%;
+  height: 40vh;
+  text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.background h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  
+}
+.programs{
+  overflow: hidden;
+  
+}
+.programs img{
+  height: 400px;
+  
+}
+.education h1 {
+  color: #191970;
+  font-size: 35px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+.education h3 {
+  color: #0077cc;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+}
+.education p {
+  color: black;
+  text-transform: capitalize;
+  line-height: 25px;
+  text-align: justify;
+  font-size: 17px;
+  font-weight: 500;
+}
+.education h4 {
+  color: #06d55d;
+  font-size: 21px;
+  font-weight: 600;
+}
+.education ul li {
+  color: #c0392b;
+  font-size: 20px;
+  font-weight: 600;
+}
+.education ul li span {
+  color: black;
+  font-size: 16px;
+  font-weight: 500px;
+}
+.skill h1 {
+  color: #191970;
+  font-size: 35px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+.skill h3 {
+  color: #0077cc;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+}
+.skill p {
+  color: black;
+  text-transform: capitalize;
+  line-height: 25px;
+  text-align: justify;
+
+  font-size: 17px;
+  font-weight: 500;
+}
+.skill h4 {
+  color: #06d55d;
+  font-size: 21px;
+  font-weight: 600;
+}
+.skill ul li {
+  color: #c0392b;
+  font-size: 20px;
+  font-weight: 600;
+}
+.skill ul li span {
+  color: black;
+  font-size: 16px;
+  font-weight: 500px;
+}
+.healthcare h1 {
+  color: #191970;
+  font-size: 35px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+.healthcare h3 {
+  color: #0077cc;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+}
+.healthcare p {
+  color: black;
+  text-transform: capitalize;
+  line-height: 25px;
+  text-align: justify;
+
+  font-size: 17px;
+  font-weight: 500;
+}
+.healthcare h4 {
+  color: #06d55d;
+  font-size: 21px;
+  font-weight: 600;
+}
+.healthcare ul li {
+  color: #c0392b;
+  font-size: 20px;
+  font-weight: 600;
+}
+.healthcare ul li span {
+  color: black;
+  font-size: 16px;
+  font-weight: 500px;
+}
+.welfare h1 {
+  color: #191970;
+  font-size: 35px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+.welfare h3 {
+  color: #0077cc;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+}
+.welfare p {
+  color: black;
+  text-transform: capitalize;
+  line-height: 25px;
+  text-align: justify;
+  margin-left: 30px;
+  font-size: 17px;
+  font-weight: 500;
+}
+.welfare h4 {
+  color: #06d55d;
+  font-size: 21px;
+  font-weight: 600;
+}
+.welfare ul li {
+  color: #c0392b;
+  font-size: 20px;
+  font-weight: 600;
+}
+.welfare ul li span {
+  color: black;
+  font-size: 16px;
+  font-weight: 500px;
+}
+/*Get Involved*/
+
+.volunteer {
+  margin-top: 50px;
+animation-name:slideInLeft;
+animation-duration: 2s;
+}
+
+.volunteer form{
+ 
+  padding: 25px;
+  background-color: #fce7e8;
+}
+.volunteer h2{
+  color: #191970;
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+.volunteer p{
+  color: black;
+  text-transform: capitalize;
+  line-height: 25px;
+  text-align: justify;
+ margin-right: 30px;
+  font-size: 17px;
+  font-weight: 500;
+}
+.volunteer img{
+  margin-top: 10px;
+}
+.form-group label {
+ font-size: 16px;
+ font-weight: 600;
+ color: #4d4d4d;
+}
+
+
+
+.form-control {
+  border-radius: 5px;
+
+}
+/*contact*/
+.contact-field{
+  overflow: hidden;
+}
+.office h1 {
+  color: #0077cc;
+  font-size: 30px;
+  font-weight: 600;
+}
+.office p {
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+.office li {
+  display: inline;
+  color: black;
+  font-size: 17px;
+  margin-right: 20px;
+}
+.office li i,.office p i {
+  padding-right: 10px;
+  color: #c0392b;
+}
+.office h5 {
+  color: #0077cc;
+  font-size: 25px;
+  font-weight: 600;
+  padding-top: 10px;
+}
+.icons i {
+  padding-right: 10px;
+  color: #c0392b;
+  font-size: 20px;
+}
+.contact-section {
+  padding: 40px 20px;
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 5px 5px 15px inset #e1772c;
+}
+.contact-section h2 {
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #003366;
+  text-transform: uppercase;
+}
+#nameError,#emailError,#mobileError,#messageError,#amountError,#selectError,#availabilityError{
+  color: red;
+  text-align: start;
+  font-size: 14px;
+
+}
+
+
+
+
+

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Niriksha Foundation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <header class="container-fluid p-0">
+      <nav class="navbar navbar-expand-xl navbar-light bg-light">
+        <a href="" class="navbar-brand col-4 ms-2">
+          <img src="assets/logo.png" alt="error" />
+          <h2 class="px-2">Niriksha Foundation</h2>
+        </a>
+        <button
+          class="navbar-toggler"
+          data-bs-target="#mainNav"
+          data-bs-toggle="collapse"
+          style="margin-right: 7px"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse menu" id="mainNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link ">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link ">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="programs.html" class="nav-link ">Programs</a>
+            </li>
+            <li class="nav-item">
+              <a href="get involved.html" class="nav-link active">Get Involved</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <button
+            data-bs-target="#donate"
+            data-bs-toggle="modal"
+            class="btn btn-primary ms-5 fw-bold text-uppercase"
+          >
+            Donate Now
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!--Modal Starts Here-->
+    <div class="modal fade" id="donate" data-bs-backdrop="static">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5>Donation Form</h5>
+            <button data-bs-dismiss="modal" class="btn-close"></button>
+          </div>
+          <form action="">
+            <div class="modal-body">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" placeholder="" />
+                <label for="">Name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" placeholder="" />
+                <label for="">Email</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" placeholder="" />
+                <label for="">Amount</label>
+              </div>
+              <select class="form-select mb">
+                <option hidden>Select Payment Method</option>
+                <option>Credit Card/Debit Card</option>
+                <option>Net Banking</option>
+                <option>Phonepe/GooglePay</option>
+              </select>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary">Donate</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal Ends Here-->
+
+    <section class="background">
+      <div class="col-lg-12">
+        <h2>Get Involved</h2>
+      </div>
+    </section>
+    <section class="container p-5 volunteer">
+      <div class="row">
+        <h2 class="text-center">Volunteers</h2>
+        <div class="col-md-6 col-lg-4">
+          
+          <img src="assets/volunteer.jpeg" class="w-100" alt="error" />
+        </div>
+        <div class="col-md-6 col-lg-8 mt-4">
+          
+          <p>
+            At Niriksha Foundation, we believe in the power of people.
+            Volunteers play a crucial role in our mission, and your support can
+            make a world of difference. Whether you're looking to make a direct
+            impact through hands-on work or contribute your skills behind the
+            scenes, there are numerous opportunities to get involved.
+          </p>
+
+          <p>
+            As a volunteer, you will join a passionate and committed team of
+            individuals working to create positive change in communities.
+            Volunteering with us allows you to use your skills, time, and energy
+            to help build a better future for those in need.
+          </p>
+        </div>
+        
+      </div>
+      <button1
+        class="btn btn-primary fw-bold text-uppercase mt-3"
+        data-bs-target="#volunteer"
+        data-bs-toggle="collapse"
+        id="volunteer"
+      >
+        Become a volunteer
+      </button1>
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script>
+        $("button1").click(() => {
+          $("button1").hide();
+        });
+      </script>
+
+      <div id="volunteer" class="collapse">
+        <div class="container-fluid mt-3">
+          <h2>Volunteer Application</h2>
+
+          <form name="contact" id="myForm" onsubmit="return application()">
+            <div class="form-group mb-3">
+              <label>Full Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="fullName"
+                name="username"
+              />
+              <p id="nameError"></p>
+            </div>
+
+            <div class="form-group mb-3">
+              <label>Email Address:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+              />
+              <p id="emailError"></p>
+            </div>
+
+            <div class="form-group mb-3">
+              <label>Phone Number:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="phone"
+                name="mobile"
+              />
+              <p id="mobileError"></p>
+            </div>
+
+            <div class="form-group mb-3">
+              <label>Preferred Volunteer Role:</label>
+              <select name="select" class="form-control">
+                <option hidden value="">Choose Your Interested Role</option>
+                <option value="Program Support">Program Support</option>
+                <option value="Event Coordination">Event Coordination</option>
+                <option value="Administrative Assistance">
+                  Administrative Assistance
+                </option>
+                <option value="Social Media & Marketing">
+                  Social Media & Marketing
+                </option>
+                <option value="Fundraising & Outreach">
+                  Fundraising & Outreach
+                </option>
+                <option value="Community Outreach">Community Outreach</option>
+              </select>
+              <p id="selectError"></p>
+            </div>
+
+            <div class="form-group mb-3">
+              <label>Availability (Days and Hours per Week):</label>
+              <input
+                type="text"
+                class="form-control"
+                id="availability"
+                name="availability"
+              />
+              <p id="availabilityError"></p>
+            </div>
+
+            <div class="form-group mb-3">
+              <label
+                >Why do you want to volunteer with Niriksha Foundation?</label
+              >
+              <textarea
+                class="form-control"
+                id="message"
+                name="message"
+                rows="4"
+              ></textarea>
+              <p id="messageError"></p>
+            </div>
+
+            <input type="submit" class="btn btn-primary fw-bold text-uppercase" value="Submit" />
+          </form>
+          <script src="validation1.js"></script>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center pt-4">
+      <div class="container px-4">
+        <div class="row footer1">
+          <div class="col-lg-3 col-md-6 mb-3">
+            <h2 class="pb-2">Contact Us</h2>
+            <p><i class="bi bi-geo-alt"></i> 1234 Hope Lane, City, Country</p>
+
+            <p><i class="bi bi-envelope"></i> info@niriksha.org</p>
+
+            <span><i class="bi bi-telephone"></i> +123-456-7890</span>
+          </div>
+          <div class="col-lg-3 col-md-6 link">
+            <h2 class="pb-2">Links</h2>
+
+            <ul>
+              <li><a href="index.html" class="nav-link">Home</a></li>
+              <li><a href="about.html" class="nav-link">About Us</a></li>
+              <li><a href="programs.html" class="nav-link">Programs</a></li>
+              <li>
+                <a href="get involved.html" class="nav-link">Get Involved</a>
+              </li>
+              <li><a href="contact.html" class="nav-link">Contact</a></li>
+              <li>Donate Now</li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 work">
+            <h2 class="pb-2">Our Work</h2>
+            <ul>
+              <li><a href="programs.html" class="nav-link">Education</a></li>
+              <li><a href="programs.html" class="nav-link">Health Care</a></li>
+              <li>
+                <a href="programs.html" class="nav-link">Women Empowerment</a>
+              </li>
+              <li>
+                <a href="programs.html" class="nav-link"
+                  >Community Development</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h2 class="pb-2">Stay Connected</h2>
+            <p>Sign up to get the latest updates.</p>
+            <form class="mail mb-2">
+              <input
+                type="email"
+                placeholder="Enter Your E-Mail"
+                class="btn btn-light"
+              />
+              <input type="submit" class="btn btn-primary" value="Subscribe" />
+            </form>
+          </div>
+          <div class="one pb-3"></div>
+        </div>
+      </div>
+    </footer>
+
+    <footer class="text-center pt-2">
+      <div class="container px-4">
+        <div class="row footer2">
+          <div class="col-lg-4 mb-2">
+            <p>&copy; 2024 Niriksha Foundation. All rights reserved.</p>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+          </div>
+          <div class="col-lg-4">
+            <ul class="social">
+              <li class="px-2"><i class="bi bi-facebook"></i></li>
+              <li class="px-2"><i class="bi bi-twitter"></i></li>
+              <li class="px-2"><i class="bi bi-instagram"></i></li>
+              <li class="px-2"><i class="bi bi-pinterest"></i></li>
+              <li class="px-2"><i class="bi bi-youtube"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
