@@ -35,16 +35,18 @@
         <div class="collapse navbar-collapse menu" id="mainNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="index.html" class="nav-link ">Home</a>
+              <a href="index.html" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="about.html" class="nav-link ">About Us</a>
+              <a href="about.html" class="nav-link">About Us</a>
             </li>
             <li class="nav-item">
-              <a href="programs.html" class="nav-link ">Programs</a>
+              <a href="programs.html" class="nav-link">Programs</a>
             </li>
             <li class="nav-item">
-              <a href="get involved.html" class="nav-link active">Get Involved</a>
+              <a href="get involved.html" class="nav-link active"
+                >Get Involved</a
+              >
             </li>
             <li class="nav-item">
               <a href="contact.html" class="nav-link">Contact</a>
@@ -104,15 +106,13 @@
         <h2>Get Involved</h2>
       </div>
     </section>
-    <section class="container p-5 volunteer">
+    <section class="container p-4 volunteer">
       <div class="row">
         <h2 class="text-center">Volunteers</h2>
         <div class="col-md-6 col-lg-4">
-          
-          <img src="assets/volunteer.jpeg" class="w-100" alt="error" />
+          <img src="assets/volunteer.jpg" class="w-100 h-100" alt="error" />
         </div>
-        <div class="col-md-6 col-lg-8 mt-4">
-          
+        <div class="col-md-6 col-lg-8 mt-5">
           <p>
             At Niriksha Foundation, we believe in the power of people.
             Volunteers play a crucial role in our mission, and your support can
@@ -127,17 +127,24 @@
             Volunteering with us allows you to use your skills, time, and energy
             to help build a better future for those in need.
           </p>
+          <p>
+            Niriskha Foundation seeks volunteers to help train resource-poor
+            individuals to become confident and independent. Volunteer roles
+            include teaching computer skills, sewing, content writing, web
+            management, and translation services. Discover more about their
+            volunteer opportunities:
+          </p>
+          <button1
+            class="btn btn-primary fw-bold text-uppercase mt-3"
+            data-bs-target="#volunteer"
+            data-bs-toggle="collapse"
+            id="volunteer"
+          >
+            Become a volunteer
+          </button1>
         </div>
-        
       </div>
-      <button1
-        class="btn btn-primary fw-bold text-uppercase mt-3"
-        data-bs-target="#volunteer"
-        data-bs-toggle="collapse"
-        id="volunteer"
-      >
-        Become a volunteer
-      </button1>
+
       <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
       <script>
         $("button1").click(() => {
@@ -147,7 +154,7 @@
 
       <div id="volunteer" class="collapse">
         <div class="container-fluid mt-3">
-          <h2>Volunteer Application</h2>
+          <h2 class="text-center">Volunteer Application</h2>
 
           <form name="contact" id="myForm" onsubmit="return application()">
             <div class="form-group mb-3">
@@ -227,7 +234,11 @@
               <p id="messageError"></p>
             </div>
 
-            <input type="submit" class="btn btn-primary fw-bold text-uppercase" value="Submit" />
+            <input
+              type="submit"
+              class="btn btn-primary fw-bold text-uppercase"
+              value="Submit"
+            />
           </form>
           <script src="validation1.js"></script>
         </div>
