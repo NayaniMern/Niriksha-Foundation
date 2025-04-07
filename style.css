@@ -817,6 +817,9 @@ animation-duration: 2s;
   font-size: 14px;
 
 }
+.navbar-toggler-icon{
+  margin-right: 20px;
+}
 
 
 
