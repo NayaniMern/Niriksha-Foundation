@@ -51,7 +51,7 @@ To run this project locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/sivatrinayaniv/niriksha-foundation.git
+   https://nayani1997.github.io/Niriksha-Foundation/
 Navigate to the project folder:
 
 bash
