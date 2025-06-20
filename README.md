@@ -81,7 +81,7 @@ For collaboration or feedback:
 
 LinkedIn: https://linkedin.com/in/sivatri-nayani
 
-GitHub: https://nayanimern.github.io/Niriksha-Foundation/
+GitHub: https://github.com/NayaniMern
 
 Email: sivatrinayani.v@gmail.com
 
