@@ -43,11 +43,7 @@ A responsive, multi-page website designed for a fictional nonprofit organization
 ┣ 📜validation1.js → Volunteer form validation
 ┗ 📜README.md → Project documentation
 
-yaml
-Copy
-Edit
 
----
 
 ## 🚀 Getting Started
 
